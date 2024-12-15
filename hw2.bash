@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # HW2 Lior Tal
-shopt -s globstar dotglob
+
 
 DIR1="$1"
 DIR2="$2"
@@ -19,7 +19,6 @@ if [[ -L "$DIR1" || -L "$DIR2" ]]; then
 fi
 
 # check only for the letter 'q'
-
 if [[ "$OPTION" != "q" ]]; then
   echo "Third parameter is not 'q', Ignoring it."
   OPTION=""
